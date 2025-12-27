@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 40px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    gap: 30px;
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Playlist Sidebar */
+.playlist {
+    width: 300px;
+    background-color: #181818;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.playlist h3 {
+    text-align: center;
+    color: #1db954;
+    margin-bottom: 20px;
+}
+
+.song {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 14px;
+}
+
+.song:hover {
+    background-color: #282828;
+    transform: translateX(5px);
+}
+
+.song.active {
+    background-color: #1db954;
+    color: #000;
+    font-weight: bold;
+}
+
+.song .title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.song .movie {
+    font-size: 12px;
+    color: #b3b3b3;
+    margin-top: 2px;
+}
+
+/* Now Playing Section */
+.now-playing {
+    flex: 1;
+    background-color: #181818;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover {
+    width: 300px;
+    height: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-image: url('https://via.placeholder.com/300');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+.cover:hover {
+    transform: scale(1.05);
+}
+
+.movie-name {
+    font-size: 18px;
+    color: #b3b3b3;
+    margin-bottom: 5px;
+}
+
+.song-name {
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    gap: 20px;
+}
+
+.controls button {
+    background-color: #1db954;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+    transition: all 0.2s;
+}
+
+.controls button:hover {
+    transform: scale(1.2);
+    background-color: #17a44d;
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 80%;
+    height: 5px;
+    background-color: #333;
+    border-radius: 5px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.progress {
+    width: 40%;
+    height: 100%;
+    background-color: #1db954;
+    transition: width 0.3s;
+}
